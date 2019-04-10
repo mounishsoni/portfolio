@@ -1,0 +1,170 @@
+body {
+	background-color: teal;
+}
+
+hr {
+	box-shadow: 0;
+	border-color: lightblue;
+}
+
+h3 {
+	font-family: Cinzel;
+	color: #fff;
+}
+
+h5 {
+	font-family: Dosis;
+	color:#fff;
+}
+
+.container {
+	min-height:33rem;
+	margin:2rem 1rem;
+}
+
+#v-pills-tab a{
+	font-family: Dosis;
+	color:#fff;
+}
+
+#v-pills-tab a:hover {
+	color:lightblue;
+}
+
+/*welcome page*/
+#welcome h1{
+	margin-top: 11rem;
+	text-align: center;
+	font-family: 'Dosis';
+	font-size: 5rem;
+	color: #fff;
+}
+
+#welcome hr {
+	box-shadow: none;
+	border-top: 0.1rem dotted lightblue;
+	max-width: 82%;
+	border-top-width: 6px;
+}
+
+/*name, img*/
+#profilephoto {
+	max-height: 10rem;
+	max-width: 10rem;
+    border-radius: 50%;
+    float: left;
+}
+
+#name h1,p {
+	color: #fff;
+	text-align: center;
+	font-family: 'Sacramento', cursive;
+	font-size: 6rem;
+	margin: 0;
+}
+
+#name p{
+	font-size: 3rem;
+}
+
+#name hr {
+	box-shadow: none;
+	border-top: 0.1rem dotted lightblue;
+	max-width: 20%;
+	border-top-width: 4px;
+}
+
+/*education*/
+#education {
+	margin-top: 4rem;
+}
+
+#education h1,h4 {
+	font-family: Cinzel;
+}
+
+#education,.project ul li {
+	font-family: Dosis;
+	color:#fff;
+}
+
+/*Skills*/
+#skills {
+
+}
+
+/*Skills (cards)*/
+.card-img {
+	width: 8rem;
+	display: inline-block;
+	padding: 0.5rem;
+    margin: 1rem 1rem;
+    background-color: #fff;
+}
+
+.card-img {
+	transition: transform .5s;
+}
+
+.card-img:hover {
+	box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.5);
+	transform: scale(1.5);
+}
+
+/*Project*/
+.project {
+	border:1px solid #fff;
+	border-radius: 6px;
+	transition: transform .5s;
+	padding: 1rem;
+	margin: 1rem auto;
+}
+
+.project:hover {
+	box-shadow: 0 0.2rem 2rem 0 rgba(0, 0, 0, 0.5);
+}
+
+/*Contact ME page*/
+#contact-info {
+	margin-top: 2rem;
+}
+
+#contact-info img {
+	max-width: 1rem;
+	max-height: 1rem;
+}
+
+#contact-info span {
+	color:#fff;
+	font-family: Comfortaa;
+	padding: 0.5rem;
+}
+
+/*Footer*/
+footer {
+	align-items: center;
+	margin:auto 2rem;
+}
+
+.port {
+	font-family: 'Comfortaa', cursive;
+	color: darkgrey;
+	letter-spacing: 0.1rem;
+	float: left;
+}
+
+footer ul {
+	list-style-type: none; /* removing bullets */
+}
+
+footer ul li {
+	float: right; 	
+	padding-left: 2rem;
+	transition: transform .5s;
+}
+
+footer ul li a:hover {
+	color: #fff;
+	text-decoration: none; /* removing underline */
+	transform: scale(2);
+}
