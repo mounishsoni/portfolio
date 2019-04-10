@@ -25,6 +25,7 @@
 	    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 	      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
 	      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#skills" role="tab" aria-controls="v-pills-profile" aria-selected="false">Skills</a>
+	      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#languages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Languages</a>
 	      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#projects" role="tab" aria-controls="v-pills-messages" aria-selected="false">Projects</a>
 	      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#contact" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contact Me</a>
 	    </div>
@@ -34,7 +35,7 @@
 	      
 	      <!-- 1st page -->
 	      <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="v-pills-home-tab">
-	      	<div id="name">
+	      	<div id="name" class="line">
 	      	  <img id="profilephoto" src="img/profile.jpg" alt="" />
 		      <h1>Mounish Soni</h1>
 		      <p>a programmer...</p><br>
@@ -65,7 +66,7 @@
 
 	      <!-- 2nd page -->
 	      <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-	      	<h3>Langauges & Technologies</h3>
+	      	<h3>Technologies</h3>
 	      	<hr>
 			  <img src="img/python.png" class="card-img" alt="" />
 			  <img src="img/java.png" class="card-img" alt="" />
@@ -80,36 +81,60 @@
 			  <img src="img/xml.png" class="card-img" alt="" />
 			  <img src="img/mysql.png" class="card-img" alt="" />
 			</div>
-
 		  <!-- 3rd page -->
+		  <div class="tab-pane fade" id="languages" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+		  	<h3>LANGUAGES</h3>
+		  	<hr>
+		  	<div class="line">
+		      <h5>English</h5>
+			  <img class="star" src="img/star.png" alt="" />
+			  <img class="star" src="img/star.png" alt="" />
+			  <img class="star" src="img/star.png" alt="" />
+			  <img class="star" src="img/star.png" alt="" />
+			  <img class="star" src="img/half-star.png" alt="" />
+			  <hr>	
+		  	</div>
+		  	<div class="line"> 
+		  	  <h5>Gujarati</h5>
+		  	  <h6>Native language</h6>
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <hr>
+		  	</div>
+		  	<div class="line">
+		  	  <h5>Hindi</h5>
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/star.png" alt="" />
+		  	  <img class="star" src="img/half-star.png" alt="" />
+		  	  <hr>
+		  	</div>
+		  </div>	
+		  <!-- 4rd page -->
 	      <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 	      	<h3>PROJECTS</h3>
 	      	<hr>
 	      	<div class="project">
-      		  <div class="row">
-      		    <div class="col-9" class="project-name">
-      		      <h5>PIG - Promoting India Globally</h5>
-      		    </div>
-      		    <div class="cols-3" class="project-year">
-      		  	  <h5>2017-2018</h5>
-      		    </div>
+      		  <div> 
+      		      <h5>Reiki-Healing-Meditation</h5>
+      		  	  <h6>( Current Project )</h6>
       		  </div>
       		  <hr>
       		  <ul>
-      			<li>It is an e-commerce website (shopping website).</li>
-      			<li>PIG is the concept that have been put forward by our team which encourages the Indian sellers in the market to sell their products globally.</li>
-      			<li>This concept would give the opportunity to the local sellers to sell their products globally.</li>
-      			<li><strong>Tools & Techonology:</strong> Java, Spring, Apache, HTML, CSS, eclipse. </li>
+      			<li>This is an informational website about Reiki.</li>
+      			<li>Reiki is a natural and simple method of spiritual healing and self-improvement that everyone can use.</li>
+      			<li>For more information about Reiki <a href="https://en.wikipedia.org/wiki/Reiki">Click Here...</a></li>
+      			<li><strong>Tools & Techonology:</strong> Python, Flask, HTML5, CSS3, Bootstrap, Sublime Text-Editor.</li>
       		  </ul>
 	      	</div>
 	      	<div class="project">
-      		  <div class="row">
-      		    <div class="col-9" class="project-name">
+      		  <div>
       		      <h5>PIG - Promoting India Globally</h5>
-      		    </div>
-      		    <div class="cols-3" class="project-year">
-      		  	  <h5>2017-2018</h5>
-      		    </div>
+      		   	  <h6>( 2017 - 2018 )</h6>
       		  </div>
       		  <hr>
       		  <ul>
@@ -121,7 +146,7 @@
 	      	</div>
 	      </div>
 
-	      <!-- 4th page -->
+	      <!-- 5th page -->
 	      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="v-pills-settings-tab">
 	      	<h3>Contact Me</h3><hr>
 	      	<div id="contact-info">
