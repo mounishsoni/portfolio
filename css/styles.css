@@ -57,7 +57,7 @@ ul {
 /*----------------------------------ALL MEDIA QUERIES BREAKPOINTS------------------------------------------------------*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
 	
 	body {
 		text-align: center;
@@ -237,15 +237,544 @@ ul {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	
+	body {
+		text-align: center;
+	}
+
+	.container {
+		min-height:29.4rem;
+		margin:2rem 1rem;
+	}
+
+	/*name, img*/
+	#profilephoto {
+		max-height: 7rem;
+		max-width: 7rem;
+	    border-radius: 50%;
+		display: block;   /* make photo in center */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#name h1,p {
+		color: #fff;
+		text-align: center;
+		font-family: 'Sacramento', cursive;
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	#name p{
+		font-size: 2rem;
+	}
+
+	/*education*/
+	#education {
+		margin-top: 3rem;
+		color: #fff;
+	}
+
+	#education h1,h4 {
+		font-family: Cinzel;
+		font-size: 1.5rem;
+	}
+
+	#education h4 {
+		font-size: 1rem;
+	}
+
+	#education h5 {
+		font-size: 1rem;
+	}
+
+	#education ul {
+		padding:0rem;
+	}
+
+	#education ul li, .project ul li {
+		font-family: Dosis;
+		text-align: justify;
+	}
+
+	/*Skills*/
+	#skills {
+		margin: 0.5rem 1rem;
+	}
+
+	/*Skills (cards)*/
+	.card-img {
+		width: 5rem;
+		display: inline-block;
+		padding: 0.5rem;
+	    margin: 1rem 1rem;
+	    background-color: #fff;
+	    box-shadow: 0px 2px 8px #333;
+	}
+
+	.card-img {
+		transition: transform .5s;
+	}
+
+	.card-img:hover {
+		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
+		transform: scale(1.2);
+	}
+
+	/*Languages*/
+	#languages h6 {
+		font-family: Dosis;
+		font-size: 0.8rem;
+		color: #fff;
+	}
+
+	.star {
+		max-height: 1rem;
+		max-width: 1rem;
+	}
+
+	/*Project*/
+	.project {
+		border:1px solid #fff;
+		border-radius: 6px;
+		transition: transform .5s;
+		padding: 1rem;
+		margin: 1rem;
+		color: #fff;
+	}
+
+	.project:hover {
+		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
+	}
+
+	.project h6 {
+		font-family: Dosis;
+		color: #fff;
+	}
+
+	.project ul li a {
+		color:lightblue;
+	}
+
+	/*Contact ME page*/
+	#contact-info {
+		margin-top: 2rem;
+		text-align: left;
+	}
+
+	#contact-info img {
+		max-width: 1rem;
+		max-height: 1rem;
+	}
+
+	.contact {
+		color:#fff;
+		font-family: Comfortaa;
+		padding: 1rem;
+	}
+
+	.contact:hover {
+		color: lightblue;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	/*Footer*/
+	footer {
+		background-color: black;
+	}
+
+	.port {
+		font-family: 'Comfortaa', cursive;
+		color: darkgrey;
+		text-align: center;
+		font-size: 0.5rem;
+	}
+
+	footer ul {
+		list-style-type: none; /* removing bullets */
+		margin-bottom: 0;
+	}
+
+	footer ul li {
+		display: inline-block;	
+		margin: 1rem 1rem 0 1rem;
+		padding-right: 1rem;
+		transition: transform .5s;
+	}
+
+	footer ul li a {
+		color:darkgrey;
+
+	}
+
+	footer ul li a:hover {
+		color: #fff;
+		text-decoration: none; /* removing underline */
+		transform: scale(2);
+	}
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px to 1199px) */
 @media only screen and (min-width: 768px) {
+	
+	body {
+		text-align: center;
+	}
+
+	.container {
+		min-height:29.4rem;
+		margin:2rem 1rem;
+	}
+
+	/*name, img*/
+	#profilephoto {
+		max-height: 7rem;
+		max-width: 7rem;
+	    border-radius: 50%;
+		display: block;   /* make photo in center */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#name h1,p {
+		color: #fff;
+		text-align: center;
+		font-family: 'Sacramento', cursive;
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	#name p{
+		font-size: 2rem;
+	}
+
+	/*education*/
+	#education {
+		margin-top: 3rem;
+		color: #fff;
+	}
+
+	#education h1,h4 {
+		font-family: Cinzel;
+		font-size: 1.5rem;
+	}
+
+	#education h4 {
+		font-size: 1rem;
+	}
+
+	#education h5 {
+		font-size: 1rem;
+	}
+
+	#education ul {
+		padding:0rem;
+	}
+
+	#education ul li, .project ul li {
+		font-family: Dosis;
+		text-align: justify;
+	}
+
+	/*Skills*/
+	#skills {
+		margin: 0.5rem 1rem;
+	}
+
+	/*Skills (cards)*/
+	.card-img {
+		width: 5rem;
+		display: inline-block;
+		padding: 0.5rem;
+	    margin: 1rem 1rem;
+	    background-color: #fff;
+	    box-shadow: 0px 2px 8px #333;
+	}
+
+	.card-img {
+		transition: transform .5s;
+	}
+
+	.card-img:hover {
+		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
+		transform: scale(1.2);
+	}
+
+	/*Languages*/
+	#languages h6 {
+		font-family: Dosis;
+		font-size: 0.8rem;
+		color: #fff;
+	}
+
+	.star {
+		max-height: 1rem;
+		max-width: 1rem;
+	}
+
+	/*Project*/
+	.project {
+		border:1px solid #fff;
+		border-radius: 6px;
+		transition: transform .5s;
+		padding: 1rem;
+		margin: 1rem;
+		color: #fff;
+	}
+
+	.project:hover {
+		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
+	}
+
+	.project h6 {
+		font-family: Dosis;
+		color: #fff;
+	}
+
+	.project ul li a {
+		color:lightblue;
+	}
+
+	/*Contact ME page*/
+	#contact-info {
+		margin-top: 2rem;
+		text-align: left;
+	}
+
+	#contact-info img {
+		max-width: 1rem;
+		max-height: 1rem;
+	}
+
+	.contact {
+		color:#fff;
+		font-family: Comfortaa;
+		padding: 1rem;
+	}
+
+	.contact:hover {
+		color: lightblue;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	/*Footer*/
+	footer {
+		background-color: black;
+	}
+
+	.port {
+		font-family: 'Comfortaa', cursive;
+		color: darkgrey;
+		text-align: center;
+		font-size: 0.5rem;
+	}
+
+	footer ul {
+		list-style-type: none; /* removing bullets */
+		margin-bottom: 0;
+	}
+
+	footer ul li {
+		display: inline-block;	
+		margin: 1rem 1rem 0 1rem;
+		padding-right: 1rem;
+		transition: transform .5s;
+	}
+
+	footer ul li a {
+		color:darkgrey;
+
+	}
+
+	footer ul li a:hover {
+		color: #fff;
+		text-decoration: none; /* removing underline */
+		transform: scale(2);
+	}
+}
 
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+	body {
+		text-align: center;
+	}
+
+	.container {
+		min-height:29.4rem;
+		margin:2rem 1rem;
+	}
+
+	/*name, img*/
+	#profilephoto {
+		max-height: 7rem;
+		max-width: 7rem;
+	    border-radius: 50%;
+		display: block;   /* make photo in center */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#name h1,p {
+		color: #fff;
+		text-align: center;
+		font-family: 'Sacramento', cursive;
+		font-size: 3rem;
+		margin: 0;
+	}
+
+	#name p{
+		font-size: 2rem;
+	}
+
+	/*education*/
+	#education {
+		margin-top: 3rem;
+		color: #fff;
+	}
+
+	#education h1,h4 {
+		font-family: Cinzel;
+		font-size: 1.5rem;
+	}
+
+	#education h4 {
+		font-size: 1rem;
+	}
+
+	#education h5 {
+		font-size: 1rem;
+	}
+
+	#education ul {
+		padding:0rem;
+	}
+
+	#education ul li, .project ul li {
+		font-family: Dosis;
+		text-align: justify;
+	}
+
+	/*Skills*/
+	#skills {
+		margin: 0.5rem 1rem;
+	}
+
+	/*Skills (cards)*/
+	.card-img {
+		width: 5rem;
+		display: inline-block;
+		padding: 0.5rem;
+	    margin: 1rem 1rem;
+	    background-color: #fff;
+	    box-shadow: 0px 2px 8px #333;
+	}
+
+	.card-img {
+		transition: transform .5s;
+	}
+
+	.card-img:hover {
+		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
+		transform: scale(1.2);
+	}
+
+	/*Languages*/
+	#languages h6 {
+		font-family: Dosis;
+		font-size: 0.8rem;
+		color: #fff;
+	}
+
+	.star {
+		max-height: 1rem;
+		max-width: 1rem;
+	}
+
+	/*Project*/
+	.project {
+		border:1px solid #fff;
+		border-radius: 6px;
+		transition: transform .5s;
+		padding: 1rem;
+		margin: 1rem;
+		color: #fff;
+	}
+
+	.project:hover {
+		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
+	}
+
+	.project h6 {
+		font-family: Dosis;
+		color: #fff;
+	}
+
+	.project ul li a {
+		color:lightblue;
+	}
+
+	/*Contact ME page*/
+	#contact-info {
+		margin-top: 2rem;
+		text-align: left;
+	}
+
+	#contact-info img {
+		max-width: 1rem;
+		max-height: 1rem;
+	}
+
+	.contact {
+		color:#fff;
+		font-family: Comfortaa;
+		padding: 1rem;
+	}
+
+	.contact:hover {
+		color: lightblue;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	/*Footer*/
+	footer {
+		background-color: black;
+	}
+
+	.port {
+		font-family: 'Comfortaa', cursive;
+		color: darkgrey;
+		text-align: center;
+		font-size: 0.5rem;
+	}
+
+	footer ul {
+		list-style-type: none; /* removing bullets */
+		margin-bottom: 0;
+	}
+
+	footer ul li {
+		display: inline-block;	
+		margin: 1rem 1rem 0 1rem;
+		padding-right: 1rem;
+		transition: transform .5s;
+	}
+
+	footer ul li a {
+		color:darkgrey;
+
+	}
+
+	footer ul li a:hover {
+		color: #fff;
+		text-decoration: none; /* removing underline */
+		transform: scale(2);
+	}
+}
 
 }
 
