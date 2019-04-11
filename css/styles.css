@@ -58,7 +58,7 @@ ul {
 /*----------------------------------ALL MEDIA QUERIES BREAKPOINTS------------------------------------------------------*/
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 768px) {
 	
 	body {
 		text-align: center;
@@ -221,6 +221,19 @@ ul {
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	}
 
+	.mapouter {
+		position:relative;
+		text-align:right;
+		height:300px;
+		width:300px;
+	}
+	.gmap_canvas {
+		overflow:hidden;
+		background:none!important;
+		height:300px;
+		width:300px;
+	}
+
 	.social ul {
 		padding-left: 0px;
         margin-bottom: 0px;
@@ -247,101 +260,90 @@ ul {
 		padding:1rem;
 	}
 
-	.mapouter{
-		position:relative;
-		text-align:right;
-		height:250px;
-		width:250px;
-	}
-	.gmap_canvas {
-		overflow:hidden;
-		background:none!important;
-		height:250px;
-		width:250px;
-	}
-
 	.social {
 		font-family: Dosis;
 		text-align: center;
 		color: #fff;
 	}
+
+	.footer {
+		visibility: hidden;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 769px) {
 
 	body {
-		text-align: center;
+
+	}
+
+	.col-3 {
+    	max-width: 20%;
 	}
 
 	.container {
-		min-height:29.4rem;
+		min-height: 42rem;
 		margin:2rem 1rem;
+	}
+
+	#v-pills-tab a{
+		font-size: 1rem;
 	}
 
 	/*name, img*/
 	#profilephoto {
-		max-height: 7rem;
-		max-width: 7rem;
+		max-height: 10rem;
+		max-width: 10rem;
 	    border-radius: 50%;
-		display: block;   /* make photo in center */
-		margin-left: auto;
-		margin-right: auto;
+	    float: left;
 	}
 
 	#name h1,p {
 		color: #fff;
 		text-align: center;
 		font-family: 'Sacramento', cursive;
-		font-size: 3rem;
+		font-size: 6rem;
 		margin: 0;
 	}
 
 	#name p{
-		font-size: 2rem;
+		font-size: 3rem;
+	}
+
+	#name hr {
+		box-shadow: none;
+		border-top: 0.1rem dotted lightblue;
+		max-width: 20%;
+		border-top-width: 4px;
 	}
 
 	/*education*/
 	#education {
-		margin-top: 3rem;
-		color: #fff;
+		margin-top: 4rem;
 	}
 
 	#education h1,h4 {
 		font-family: Cinzel;
-		font-size: 1.5rem;
 	}
 
-	#education h4 {
-		font-size: 1rem;
-	}
-
-	#education h5 {
-		font-size: 1rem;
-	}
-
-	#education ul {
-		padding:0rem;
-	}
-
-	#education ul li, .project ul li {
+	#education,.project ul li {
 		font-family: Dosis;
-		text-align: justify;
+		color:#fff;
 	}
 
 	/*Skills*/
 	#skills {
-		margin: 0.5rem 1rem;
+
 	}
 
 	/*Skills (cards)*/
 	.card-img {
-		width: 5rem;
+		width: 8rem;
 		display: inline-block;
 		padding: 0.5rem;
 	    margin: 1rem 1rem;
 	    background-color: #fff;
-	    box-shadow: 0px 2px 8px #333;
 	}
 
 	.card-img {
@@ -350,14 +352,23 @@ ul {
 
 	.card-img:hover {
 		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
-		transform: scale(1.2);
+		transform: scale(1.3);
 	}
 
 	/*Languages*/
+	#languages h5 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	#lang-list {
+		text-align: center;
+	}
+
 	#languages h6 {
 		font-family: Dosis;
-		font-size: 0.8rem;
-		color: #fff;
+		font-size: 1rem;
+		color: #fff;		
 	}
 
 	.star {
@@ -371,32 +382,34 @@ ul {
 		border-radius: 6px;
 		transition: transform .5s;
 		padding: 1rem;
-		margin: 1rem;
-		color: #fff;
+		margin: 1rem auto;
 	}
 
 	.project:hover {
 		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
 	}
 
-	.project h6 {
-		font-family: Dosis;
-		color: #fff;
+	.project h5 {
+		font-size: 1.3rem;
 	}
 
-	.project ul li a {
-		color:lightblue;
+	.project h6 {
+		font-family: Dosis;
+		color:#fff;
 	}
 
 	/*Contact ME page*/
 	#contact-info {
-		margin-top: 2rem;
-		text-align: left;
+		margin: 0.5rem;
 	}
 
 	#contact-info img {
-		max-width: 1rem;
-		max-height: 1rem;
+		max-height: 1.3rem;
+		max-width: 1.3rem;
+	}
+
+	.contact-info-list {
+		padding: 1rem;
 	}
 
 	.contact {
@@ -410,405 +423,52 @@ ul {
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	}
 
+	.mapouter {
+		position:relative;
+		text-align:right;
+		height:300px;
+		width:650px;
+	}
+	.gmap_canvas {
+		overflow:hidden;
+		background:none!important;
+		height:300px;
+		width:650px;
+	}
+
+	.social {
+		visibility: hidden;
+	}
+
 	/*Footer*/
-	footer {
-		background-color: black;
+	.footer {
+		margin:auto 2rem;
 	}
 
 	.port {
 		font-family: 'Comfortaa', cursive;
 		color: darkgrey;
-		text-align: center;
-		font-size: 0.5rem;
+		letter-spacing: 0.1rem;
+		float: left;
 	}
 
-	footer ul {
+	.footer ul {
 		list-style-type: none; /* removing bullets */
-		margin-bottom: 0;
 	}
 
-	footer ul li {
-		display: inline-block;	
-		margin: 1rem 1rem 0 1rem;
-		padding-right: 1rem;
+	.footer ul li {
+		float: right; 	
+		padding-left: 2rem;
 		transition: transform .5s;
 	}
 
-	footer ul li a {
+	.footer ul li a {
 		color:darkgrey;
-
 	}
 
-	footer ul li a:hover {
+	.footer ul li a:hover {
 		color: #fff;
 		text-decoration: none; /* removing underline */
 		transform: scale(2);
 	}
 }
-
-}
-
-/* Medium devices (landscape tablets, 768px to 1199px) */
-@media only screen and (min-width: 768px) {
-
-	body {
-		background-color: green;
-	}
-
-	.container {
-		min-height:29.4rem;
-		margin:2rem 1rem;
-	}
-
-	/*name, img*/
-	#profilephoto {
-		max-height: 7rem;
-		max-width: 7rem;
-	    border-radius: 50%;
-		display: block;   /* make photo in center */
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#name h1,p {
-		color: #fff;
-		text-align: center;
-		font-family: 'Sacramento', cursive;
-		font-size: 3rem;
-		margin: 0;
-	}
-
-	#name p{
-		font-size: 2rem;
-	}
-
-	/*education*/
-	#education {
-		margin-top: 3rem;
-		color: #fff;
-	}
-
-	#education h1,h4 {
-		font-family: Cinzel;
-		font-size: 1.5rem;
-	}
-
-	#education h4 {
-		font-size: 1rem;
-	}
-
-	#education h5 {
-		font-size: 1rem;
-	}
-
-	#education ul {
-		padding:0rem;
-	}
-
-	#education ul li, .project ul li {
-		font-family: Dosis;
-		text-align: justify;
-	}
-
-	/*Skills*/
-	#skills {
-		margin: 0.5rem 1rem;
-	}
-
-	/*Skills (cards)*/
-	.card-img {
-		width: 5rem;
-		display: inline-block;
-		padding: 0.5rem;
-	    margin: 1rem 1rem;
-	    background-color: #fff;
-	    box-shadow: 0px 2px 8px #333;
-	}
-
-	.card-img {
-		transition: transform .5s;
-	}
-
-	.card-img:hover {
-		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
-		transform: scale(1.2);
-	}
-
-	/*Languages*/
-	#languages h6 {
-		font-family: Dosis;
-		font-size: 0.8rem;
-		color: #fff;
-	}
-
-	.star {
-		max-height: 1rem;
-		max-width: 1rem;
-	}
-
-	/*Project*/
-	.project {
-		border:1px solid #fff;
-		border-radius: 6px;
-		transition: transform .5s;
-		padding: 1rem;
-		margin: 1rem;
-		color: #fff;
-	}
-
-	.project:hover {
-		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
-	}
-
-	.project h6 {
-		font-family: Dosis;
-		color: #fff;
-	}
-
-	.project ul li a {
-		color:lightblue;
-	}
-
-	/*Contact ME page*/
-	#contact-info {
-		margin-top: 2rem;
-		text-align: left;
-	}
-
-	#contact-info img {
-		max-width: 1rem;
-		max-height: 1rem;
-	}
-
-	.contact {
-		color:#fff;
-		font-family: Comfortaa;
-		padding: 1rem;
-	}
-
-	.contact:hover {
-		color: lightblue;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	}
-
-	/*Footer*/
-	footer {
-		background-color: black;
-	}
-
-	.port {
-		font-family: 'Comfortaa', cursive;
-		color: darkgrey;
-		text-align: center;
-		font-size: 0.5rem;
-	}
-
-	footer ul {
-		list-style-type: none; /* removing bullets */
-		margin-bottom: 0;
-	}
-
-	footer ul li {
-		display: inline-block;	
-		margin: 1rem 1rem 0 1rem;
-		padding-right: 1rem;
-		transition: transform .5s;
-	}
-
-	footer ul li a {
-		color:darkgrey;
-
-	}
-
-	footer ul li a:hover {
-		color: #fff;
-		text-decoration: none; /* removing underline */
-		transform: scale(2);
-	}
-}
-
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-	body {
-		background-color: green;
-		text-align: center;
-	}
-
-
-	.container {
-		min-height:29.4rem;
-		margin:2rem 1rem;
-	}
-
-	/*name, img*/
-	#profilephoto {
-		max-height: 7rem;
-		max-width: 7rem;
-	    border-radius: 50%;
-		display: block;   /* make photo in center */
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#name h1,p {
-		color: #fff;
-		text-align: center;
-		font-family: 'Sacramento', cursive;
-		font-size: 3rem;
-		margin: 0;
-	}
-
-	#name p{
-		font-size: 2rem;
-	}
-
-	/*education*/
-	#education {
-		margin-top: 3rem;
-		color: #fff;
-	}
-
-	#education h1,h4 {
-		font-family: Cinzel;
-		font-size: 1.5rem;
-	}
-
-	#education h4 {
-		font-size: 1rem;
-	}
-
-	#education h5 {
-		font-size: 1rem;
-	}
-
-	#education ul {
-		padding:0rem;
-	}
-
-	#education ul li, .project ul li {
-		font-family: Dosis;
-		text-align: justify;
-	}
-
-	/*Skills*/
-	#skills {
-		margin: 0.5rem 1rem;
-	}
-
-	/*Skills (cards)*/
-	.card-img {
-		width: 5rem;
-		display: inline-block;
-		padding: 0.5rem;
-	    margin: 1rem 1rem;
-	    background-color: #fff;
-	    box-shadow: 0px 2px 8px #333;
-	}
-
-	.card-img {
-		transition: transform .5s;
-	}
-
-	.card-img:hover {
-		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
-		transform: scale(1.2);
-	}
-
-	/*Languages*/
-	#languages h6 {
-		font-family: Dosis;
-		font-size: 0.8rem;
-		color: #fff;
-	}
-
-	.star {
-		max-height: 1rem;
-		max-width: 1rem;
-	}
-
-	/*Project*/
-	.project {
-		border:1px solid #fff;
-		border-radius: 6px;
-		transition: transform .5s;
-		padding: 1rem;
-		margin: 1rem;
-		color: #fff;
-	}
-
-	.project:hover {
-		box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.5);
-	}
-
-	.project h6 {
-		font-family: Dosis;
-		color: #fff;
-	}
-
-	.project ul li a {
-		color:lightblue;
-	}
-
-	/*Contact ME page*/
-	#contact-info {
-		margin-top: 2rem;
-		text-align: left;
-	}
-
-	#contact-info img {
-		max-width: 1rem;
-		max-height: 1rem;
-	}
-
-	.contact {
-		color:#fff;
-		font-family: Comfortaa;
-		padding: 1rem;
-	}
-
-	.contact:hover {
-		color: lightblue;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	}
-
-	/*Footer*/
-	footer {
-		background-color: black;
-	}
-
-	.port {
-		font-family: 'Comfortaa', cursive;
-		color: darkgrey;
-		text-align: center;
-		font-size: 0.5rem;
-	}
-
-	footer ul {
-		list-style-type: none; /* removing bullets */
-		margin-bottom: 0;
-	}
-
-	footer ul li {
-		display: inline-block;	
-		margin: 1rem 1rem 0 1rem;
-		padding-right: 1rem;
-		transition: transform .5s;
-	}
-
-	footer ul li a {
-		color:darkgrey;
-
-	}
-
-	footer ul li a:hover {
-		color: #fff;
-		text-decoration: none; /* removing underline */
-		transform: scale(2);
-	}
-}
-
-}
-
