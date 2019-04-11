@@ -58,7 +58,7 @@ ul {
 /*----------------------------------ALL MEDIA QUERIES BREAKPOINTS------------------------------------------------------*/
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
 	
 	body {
 		text-align: center;
@@ -225,7 +225,7 @@ ul {
 		padding-left: 0px;
         margin-bottom: 0px;
 	}
-	
+
 	.social ul li {
 		display: inline-block;	
 		margin: 1rem 1rem 0 1rem;
