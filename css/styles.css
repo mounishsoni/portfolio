@@ -57,7 +57,7 @@ ul {
 /*----------------------------------ALL MEDIA QUERIES BREAKPOINTS------------------------------------------------------*/
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 425px), screen and (max-height: 375px) {
+@media screen and (max-width: 425px), screen and (max-height: 750px) {
 	
 	body {
 		text-align: center;
