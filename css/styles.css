@@ -57,10 +57,11 @@ ul {
 /*----------------------------------ALL MEDIA QUERIES BREAKPOINTS------------------------------------------------------*/
 
 /* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px) {
+@media screen and (max-width: 425px), screen and (max-height: 375px) {
 	
 	body {
 		text-align: center;
+		background-color: teal;
 	}
 
 	.container {
@@ -237,7 +238,7 @@ ul {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-	
+
 	body {
 		text-align: center;
 	}
@@ -418,9 +419,9 @@ ul {
 
 /* Medium devices (landscape tablets, 768px to 1199px) */
 @media only screen and (min-width: 768px) {
-	
+
 	body {
-		text-align: center;
+		background-color: green;
 	}
 
 	.container {
@@ -601,8 +602,10 @@ ul {
 @media only screen and (min-width: 992px) {
 
 	body {
+		background-color: green;
 		text-align: center;
 	}
+
 
 	.container {
 		min-height:29.4rem;
