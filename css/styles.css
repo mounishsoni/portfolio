@@ -62,16 +62,24 @@ ul {
 	
 	body {
 		text-align: center;
+		background-color: rgba(151, 128, 111);
 	}
 
 	.container {
-		margin:2rem 1rem;
+		margin: 4rem 0 0 0.5rem;
+	}
+
+	#v-pills-tab a {
+		font-size: 1rem;
+		padding-top: 1.2rem;
+		padding-bottom: 1.2rem;
+		letter-spacing: 1px;
 	}
 
 	/*name, img*/
 	#profilephoto {
-		max-height: 10rem;
-		max-width: 10rem;
+		max-height: 8rem;
+		max-width: 8rem;
 	    border-radius: 50%;
 		display: block;   /* make photo in center */
 		margin-left: auto;
@@ -83,12 +91,12 @@ ul {
 		color: #fff;
 		text-align: center;
 		font-family: 'Sacramento', cursive;
-		font-size: 4rem;
+		font-size: 3rem;
 		margin: 0;
 	}
 
 	#name p{
-		font-size: 3rem;
+		font-size: 1.5rem;
 	}
 
 	/*education*/
@@ -99,15 +107,15 @@ ul {
 
 	#education h1,h4 {
 		font-family: Cinzel;
-		font-size: 3rem;
-	}
-
-	#education h4 {
 		font-size: 2rem;
 	}
 
+	#education h4 {
+		font-size: 1.2rem;
+	}
+
 	#education h5 {
-		font-size: 1.7rem;
+		font-size: 1.1rem;
 	}
 
 	#education ul {
@@ -117,11 +125,13 @@ ul {
 	#education ul li, .project ul li {
 		font-family: Dosis;
 		text-align: justify;
-		font-size: 1.5rem;
+		font-size: 1rem;
+		letter-spacing: 1px;
 	}
 
 	strong {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
+		letter-spacing: 2px;
 	}
 
 	/*Skills*/
@@ -130,11 +140,11 @@ ul {
 	}
 
 	#skills h3 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 	/*Skills (cards)*/
 	.card-img {
-		width: 9rem;
+		width: 6rem;
 		display: inline-block;
 		padding: 0.5rem;
 		margin: 0.5rem;
@@ -152,18 +162,26 @@ ul {
 	}
 
 	/*Languages*/
-	#languages h3, h5 {
-		font-size: 3rem;
+	#languages h3 {
+		font-size: 2rem;
 	}
+
+	#languages h5 {
+		font-size: 1rem;
+		letter-spacing: 2px;
+	}
+
 	#languages h6 {
 		font-family: Dosis;
-		font-size: 1rem;
-		color: #fff;
+		font-size: 0.8rem;
+		color: rgba(255, 255, 255, 0.5);
+		letter-spacing: 3px;
+		font-weight: bold;
 	}
 
 	.star {
-		max-height: 1rem;
-		max-width: 1rem;
+		max-height: 0.8rem;
+		max-width: 0.8rem;
 	}
 
 	/*Project*/
@@ -181,13 +199,13 @@ ul {
 	}
 
 	#projects h3 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.project h6 {
 		font-family: Dosis;
 		color: #fff;
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 
 	.project ul li a {
@@ -202,18 +220,18 @@ ul {
 	}
 
 	#contact h3 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	#contact-info img {
-		max-width: 2rem;
-		max-height: 2rem;
+		max-width: 1rem;
+		max-height: 1rem;
 	}
 
 	.contact {
 		color:#fff;
 		font-family: Comfortaa;
-		padding-left: 1rem;
+		padding-left:0.5rem;
 	}
 
 	.contact:hover {
@@ -224,14 +242,14 @@ ul {
 	.mapouter {
 		position:relative;
 		text-align:right;
-		height:300px;
-		width:300px;
+		height: 200px;
+		width: 250px;
 	}
 	.gmap_canvas {
 		overflow:hidden;
 		background:none!important;
-		height:300px;
-		width:300px;
+		height:200px;
+		width:250px;
 	}
 
 	.social ul {
@@ -241,8 +259,9 @@ ul {
 
 	.social ul li {
 		display: inline-block;	
-		margin: 1rem 1rem 0 1rem;
-		padding-right: 0.5rem;
+		margin-top: 1.5rem;
+		padding-right: 0.8rem;
+		padding-left: 0.8rem;
 		transition: transform .5s;
 	}
 
@@ -257,7 +276,7 @@ ul {
 	}
 
 	.contact-info-list {
-		padding:1rem;
+		padding: 1rem;
 	}
 
 	.social {
