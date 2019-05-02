@@ -65,8 +65,12 @@ ul {
 		background-color: rgba(151, 128, 111);
 	}
 
-	.container {
-		margin: 4rem 0 0 0.5rem;
+	.main {
+		margin: 4rem 0.5rem 0 0.5rem;
+	}
+
+	#v-pills-tab {
+		margin-top: 2rem;
 	}
 
 	#v-pills-tab a {
@@ -276,7 +280,6 @@ ul {
 	}
 
 	.contact-info-list {
-		padding: 1rem;
 	}
 
 	.social {
@@ -301,8 +304,8 @@ ul {
     	max-width: 20%;
 	}
 
-	.container {
-		min-height: 42rem;
+	.main {
+		min-height: 32rem;
 		margin:2rem 1rem;
 	}
 
@@ -456,7 +459,7 @@ ul {
 	}
 
 	.social {
-		visibility: hidden;
+		display: none;
 	}
 
 	/*Footer*/
