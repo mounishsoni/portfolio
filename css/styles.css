@@ -33,26 +33,27 @@ a:hover {
 ul {
 	list-style-type: circle;
 }
+
 /*main nav tab*/
 #v-pills-tab {
 	position:fixed;
 }
 
 #v-pills-tab a{
-		font-family: Dosis;
-		font-size: 1.5rem;
-		color:#fff;
+	font-family: Dosis;
+	font-size: 1.5rem;
+	color:#fff;
 }
 
 #v-pills-tab a:hover {
-		color:lightblue;
+	color:lightblue;
 }
 
 .line hr {
-		box-shadow: none;
-		border-top: 0.1rem dotted lightblue;
-		max-width: 20%;
-		border-top-width: 4px;
+	box-shadow: none;
+	border-top: 0.1rem dotted lightblue;
+	max-width: 20%;
+	border-top-width: 4px;
 }
 
 /*----------------------------------ALL MEDIA QUERIES BREAKPOINTS------------------------------------------------------*/
@@ -66,11 +67,14 @@ ul {
 	}
 
 	.main {
-		margin: 4rem 0.5rem 0 0.5rem;
+		margin: 2rem 0.5rem 0 0.5rem;
+	}
+
+	.col-sm-10 {
 	}
 
 	#v-pills-tab {
-		margin-top: 2rem;
+		margin-top:;
 	}
 
 	#v-pills-tab a {
@@ -311,6 +315,7 @@ ul {
 
 	#v-pills-tab a{
 		font-size: 1rem;
+		letter-spacing: 1px;
 	}
 
 	/*name, img*/
